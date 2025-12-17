@@ -14,10 +14,19 @@ GET http://127.0.0.1:8000/users/126/posts/2001
 Accept: application/json
 
 ### 获取单个商品
-GET http://127.0.0.1:8000/items/1
+GET http://127.0.0.1:8000/items/10000
 
 ### 获取商品并传递查询参数
 GET http://127.0.0.1:8000/items/1?title=测试标题&description=测试描述&ge=5&le=100
 
 ### 获取商品（只传部分参数）
 GET http://127.0.0.1:8000/items/999?title=新商品&ge=10
+
+### 查询参数 基本使用
+GET http://127.0.0.1:8000/products?skip=100&limit=520
+Accept: application/json
+
+
+
+
+

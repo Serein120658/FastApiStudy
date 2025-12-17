@@ -29,3 +29,8 @@ async def get_item(
         )
 ):
     return {"item_id": item_id}
+
+@app.get("/products")
+async def list_products(skip: int = 0, limit: int = 10):
+    return {"skip": skip, "limit": limit}
+
