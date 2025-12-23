@@ -1,6 +1,6 @@
 from fastapi import FastAPI,APIRouter
 from fastapi import Path
-from routers import test_router
+from controller import test_router
 
 
 app = FastAPI()
